@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toys Shop</title>
+    <style>
+       body {
+           background-color: lightblue;
+           font-family: Arial, sans-serif;
+       }
+
+       .menu {
+           background-color: darkblue;
+           padding: 10px;
+           text-align: center;
+       }
+
+       .menu ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .menu ul li {
+           display: inline-block;
+           position: relative;
+       }
+
+       .menu ul li a {
+           color: white;
+           text-decoration: none;
+           padding: 10px 15px;
+           display: block;
+           font-size: 18px;
+       }
+
+       .menu ul li a:hover {
+           color: yellow;
+           background: navy;
+       }
+
+       /* Dropdown menu hidden by default */
+       .menu ul li ul {
+           display: none;
+           position: absolute;
+           background: darkblue;
+           padding: 0;
+           margin: 0;
+           list-style: none;
+           min-width: 150px;
+       }
+
+       /* Show dropdown when hover */
+       .menu ul li:hover ul {
+           display: block;
+       }
+
+       .menu ul li ul li {
+           display: block;
+           text-align: left;
+       }
+
+       h1 {
+           color: navy;
+           margin-left: 20px;
+       }
+       h2 {
+	     color: navy;
+		 margin-left: 10px;
+	   
+	   } 
+       p {
+           text-align: center;
+           color: blue;
+       }
+	   
+    .logo {
+      text-align: left;
+	  background-color: white;         /* white background box */
+      border: 4px solid black;         /* black border around logo area */
+      border-radius: 15px;             /* rounded corners */
+      width: 100px;                    /* width of logo box */
+      margin: 20px 0 20px 20px;               /* centers box on page */
+      padding: 10px;                   /* space inside border */
+      box-shadow: 4px 4px 10px gray;
+	   }
+	   
+	.buy-btn {
+           background-color: darkblue;
+           color: white;
+           border: none;
+           padding: 10px 20px;
+           border-radius: 8px;
+           cursor: pointer;
+           margin:10px;
+}
+     .buy-btn:hover {
+         background-color: navy;
+         color: yellow;
+}
+
+	   .img:hover {
+	   
+           transform: scale(1.1);
+           transition: 0.3s;
+}
+    </style>
+</head>
+<body>
+
+
+  <!-- Navigation Menu -->
+  <div class="menu">
+    <div class="logo">
+    <a href="index.html"><img src="logo.jpg" alt="Shop Logo" width="100px" height="100px"></a>
+    </div>
+      
+	  
+	  <ul>
+          <li><a href="index.html">Home</a>
+              <ul>
+                  <li><a href="#">Metallic Toys</a></li>
+                  <li><a href="#">Barbie Houses</a></li>
+                  <li><a href="#">Kitchen Set</a></li>
+              </ul>
+          </li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="sale.html">Sale</a></li>
+		  <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+              </ul>
+          <li><a href="contactus.html"></a></li>
+      </ul>
+  </div>
+  
+  <div style="background-color: navy; color: white; padding: 20px; text-align: center; font-size: 22px;">
+    Sale is live! — Where Fun Begins! 
+  </div>
+  <marquee style="background: yellow; color: red; font-size: 20px;">
+         Big Sale — Up to 50% Off on All Toys! 
+  </marquee>
+  <h1>Welcome to <b>Happy Toys</b> Shop</h1>
+
+  <!-- Toy 1 -->
+  <h2>Teddy Bear</h2>
+  <div style="text-align:left;">
+  <img src="mypicture.jpg" alt="mypicture" style="border: 3px solid black; width:300px; margin-bottom:5px;">
+  <a href="https://wa.me/923322063309?text=Hello!%20I%20want%20to%20buy%20this%20Teddy%20Bear." target="_blank">
+  
+
+  <button class ="buy-btn"  onclick="window.location.href='order.html" style="display:block; margin-left:15px;">Buy Now</button>
+  </a>
+  </div>
+  <img src="teddy2.jpg" alt="teddy2" style="border: 3px solid black; width:300px; margin:10px;">
+  
+  
+  <img src="" alt="teddy3" style="border: 3px solid black; width:300px; margin:10px;">
+  
+  <h2>Description</h2>
+  <ul>
+     <li>Price - $10</li>
+     <li>Size - 6 inch</li>
+     <li>Color - Brown</li>
+  </ul>
+
+  <!-- Toy 2 -->
+  <h2>Car Toy</h2>
+  <img src="car.jpg" alt="Toy Car" style="border: 3px solid black; width:200px; margin:10px;">
+  <h2>Description</h2>
+  <ul>
+      <li>Price - $12</li>
+      <li>Size - 5 inch</li>
+      <li>Color - Red</li>
+  </ul>
+
+  <!-- Toy 3 -->
+  <h2>Doll</h2>
+  <img src="doll.jpg" alt="Doll" style="border: 3px solid black; width:200px; margin:10px;">
+  <img src="doll2.jpg" alt="Doll2" style="border: 3px solid black; width:200px; margin:10px;">
+  
+  <h2>Description</h2>
+  <ul>
+      <li>Price - $15</li>
+      <li>Size - 7 inch</li>
+      <li>Color - Pink</li>
+  </ul>
+ <!-- Customer Feedback Section -->
+ <h2>   
+ Customer Feedback
+ </h2>
+ <form style="background-color: #f0f8ff; border: 2px solid navy; width: 60%; margin: 20px auto 40px; padding: 15px;">
+
+ <label><b>Your Name:</b></label><br>
+ <input type="text" name="name" placeholder="Enter your name" style="width: 95%; padding: 8px; margin-bottom: 10px;"><br>
+ 
+ <label><b>Your Feedback:</b></label><br>
+ <textarea name="Feedback" rows="4" cols="50" placeholder="Write your feedback here..." style="width: 95%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+ <button 
+ 
+ 
+  <p>Thank you for visiting our shop!</p>
+
+
+<footer style="background-color: darkblue; color: white; text-align: center; padding: 10px; margin-top: 50px;">
+   2025 Happy Toys Shop | Contact: happytoys@gmail.com
+</footer>
+</body>
+</html>
